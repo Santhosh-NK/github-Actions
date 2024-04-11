@@ -12,5 +12,5 @@ jobs:
               with:
                 who-to-greet: Priya
               id: greet
-            - name: second-stepa
+            - name: second-step
               run: echo "${{steps.greet.outputs.time}}"
