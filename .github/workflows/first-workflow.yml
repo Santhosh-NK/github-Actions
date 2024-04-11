@@ -6,3 +6,6 @@ jobs:
     steps: 
       - name: first-step
         run: echo "santhosh"
+      - name: second-step
+        run: echo "Hello Priya"
+
