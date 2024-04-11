@@ -7,5 +7,7 @@ jobs:
       - name: first-step
         run: echo "santhosh"
       - name: second-step
-        run: echo "Hello Priya"
+        run: |
+           echo "Hello Priya"
+           pwd
 
