@@ -1,5 +1,8 @@
 name: first-action
-on: push
+on: 
+    push:
+    pull_request: [opened,closed,assigned]
+    issues:
 jobs:
     first-job:
         runs-on: ubuntu-latest
@@ -9,5 +12,5 @@ jobs:
               with:
                 who-to-greet: Priya
               id: greet
-            - name: second-step
+            - name: second-stepa
               run: echo "${{steps.greet.outputs.time}}"
